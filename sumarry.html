@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Today summary</title>
+</head>
+
+<body>
+    <h2>Jason Harrison SSD Day1</h2>
+    <h3>Sumary</h3>
+    <h4>How to show data in Javascript</h4>
+    <p>
+        We use console.log or alert function
+    </p>
+    <p>Eg: console.log("my content"); </p>
+    <img src="./Capture.JPG">
+
+    <h4>Important objects in Javascript</h4>
+    <p>There are 4 important ones:</p>
+    <ul>
+        <li>window: Current window tab</li>
+        <li>document: From &lt;html&gt; to &lt;/html&gt;</li>
+        <li>style: CSS for that object</li>
+        <li>navigator: browser itself</li>
+    </ul>
+
+    <h4>Defer script tag</h4>
+    <pre>&lt;script defer=&quot;defer&quot;&gt; // code&lt;/script&gt;</pre>
+    <p>The defer option will make the script run after the HTML page is loaded</p>
+
+    <h4>Some falsy values in Javascript</h4>
+    <ul>
+        <li>false</li>
+        <li>0</li>
+        <li>undefined</li>
+        <li>null</li>
+        <li>NaN</li>
+        <li>"0"</li>
+        <li>""</li>
+    </ul>
+
+    <h4>Manipulate Date</h4>
+    <p>We can create a Date object by using sytax:</p>
+    <pre>var now = new Date();</pre>
+    <p>Eg: Calculate how many days until Xmas</p>
+    <pre>
+            var now  = new Date()
+            var xmas = new Date(2019, 11, 25)
+            
+            var milliseconds = xmas - now
+            
+            var seconds      = milliseconds / 1000
+            var mins         = seconds      / 60
+            var hours        = mins         / 60
+            var days         = hours        / 24
+            
+            alert(days.toFixed(2)  + " days until xmas")
+            alert(Math.round(days) + " days until xmas")
+    </pre>
+
+    <h4>Create an array</h4>
+    <p>We can create an array by wrapping it in []:</p>
+    <pre>var seasons = ['summer', 'spring', 'winter', 'fall')</pre>
+
+    <h4>Loop in Javascript</h4>
+    <h5>For loop</h5>
+    <pre>
+            var seasons=['spring','summer','fall'];
+            seasons.push('winter');
+            for(var i=0; i&lt;seasons.length;i++)
+            { 
+                console.log(seasons[i]) 
+            }
+    </pre>
+    <img src="./Capture-2.JPG">
+
+    <h5>For each</h5>
+    <pre>
+            var schools=['sfu','bcit','ubc','ufv']
+            schools.forEach(school => console.log("shool is "+school))
+    </pre>
+    <img src="./Capture-3.JPG">
+</body>
+
+</html>
